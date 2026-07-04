@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Prediction Result</title>
+
+        <style>
+
+            *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+            }
+
+            body{
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            }
+
+            .card{
+            background:white;
+            padding:40px;
+            border-radius:20px;
+            text-align:center;
+            width:450px;
+            box-shadow:0 10px 30px rgba(0,0,0,.25);
+            }
+
+            .approved{
+            background:#d4edda;
+            color:#155724;
+            border:3px solid #28a745;
+            padding:25px;
+            border-radius:15px;
+            }
+
+            .rejected{
+            background:#f8d7da;
+            color:#721c24;
+            border:3px solid #dc3545;
+            padding:25px;
+            border-radius:15px;
+
+            }
+
+            h1{
+            font-size:35px;
+            margin-bottom:15px;
+            }
+
+            h2{
+            font-size:28px;
+            }
+
+            button{
+            margin-top:35px;
+            padding:15px 30px;
+            background:#0077ff;
+            border:none;
+            color:white;
+            font-size:17px;
+            border-radius:10px;
+            cursor:pointer;
+
+            }
+
+            button:hover{
+            background:#0056d6;
+            }
+
+        </style>
+
+    </head>
+
+<body>
+
+    <div class="card">
+
+        <div class="{{ result_class }}">
+
+        <h1>{{ emoji }}</h1>
+        <h2>{{ prediction_text }}</h2>
+
+   </div>
+
+<br>
+
+    <form action="/">
+
+        <button>
+            Check Another Prediction
+        </button>
+
+    </form>
+    
+    </div>
+
+</body>
+</html>
