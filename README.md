@@ -1,26 +1,18 @@
 #  Loan Prediction using Decision Tree Classifier
 
-A Machine Learning project that predicts whether a loan application will be **Approved** or **Rejected** using a **Decision Tree Classifier**. The project includes data preprocessing, model training, evaluation, and deployment using Flask.
+A Machine Learning project that predicts whether a loan application will be **Approved** or **Rejected** using a **Decision Tree Classifier**.
 
 ---
 
-##  Project Overview
+##  Objective
 
 The objective of this project is to build a loan prediction system that helps determine loan approval based on applicant details.
-
-The application takes the following inputs:
-- Age
-- Annual Income
-- Loan Amount
-- Credit Score
-
-Based on these inputs, the trained Decision Tree model predicts whether the loan will be **Approved** or **Rejected**.
 
 ---
 
 ##  Dataset
 
-**Dataset Name:** `loan_data.csv`
+ `loan_data.csv`
 
 ### Features
 
@@ -73,60 +65,39 @@ Based on these inputs, the trained Decision Tree model predicts whether the loan
 
 ---
 
-##  Project Structure
-
-```
-Loan_Prediction/
-
-│── app.py
-│── train_model.py
-│── loan_data.csv
-│── loan_prediction_model.pkl
-│── README.md
-│── requirements.txt
-
-└── templates
-      ├── index.html
-      └── result.html
-```
-
----
-
 ##  How to Run the Project
 
-### 1. Clone the Repository
+### `Using the ZIP file`
+
+1. Download and extract the ZIP file.
+2. Open the extracted project folder in VS code or any python IDE.
+
+### `Using the GitHub Repository`
+ 
+#### Clone the Repository
 
 ```bash
 git clone <repository-link>
 ```
 
-### 2. Install Required Libraries
+### `Install Required Libraries`
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Train the Model
+### `Train the Model`
 
 ```bash
 python train_model.py
 ```
 
-### 4. Run the Flask Application
+### `Run the Flask Application`
 
 ```bash
 python app.py
 ```
 
-### 5. Open in Browser
-
-```
-http://127.0.0.1:5000
-```
-
----
-
-## Application Preview
 
 ### Home Page
 
@@ -137,11 +108,8 @@ http://127.0.0.1:5000
 
 Displays
 
-- ✅ Loan Approved
-
-or
-
-- ❌ Loan Rejected
+-  Loan Approved
+-  Loan Rejected
 
 ---
 
