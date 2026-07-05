@@ -80,12 +80,6 @@ The objective of this project is to build a loan prediction system that helps de
 git clone <repository-link>
 ```
 
-### `Install Required Libraries`
-
-```bash
-pip install -r requirements.txt
-```
-
 ### `Train the Model`
 
 ```bash
